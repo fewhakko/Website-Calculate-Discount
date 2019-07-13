@@ -8,13 +8,24 @@ if(isset($_GET['percent'])) {
         $response["message"] = 'กรุณาอย่าเว้นช่องว่าง';
     }
     else {
-        $money = $_POST['money'];
-        $nombre_format_francais = number_format($_POST['percent'], 2, '', ' ');
-        $percent = '0.'.$nombre_format_francais;
-        $valuex = $money * $percent;
-        $test = $money - $valuex;
-        $response["status"] = 'success';
-        $response["message"] = 'เท่ากับ : '.$test.' บาท';
+
+        if (strlen($_POST['percent']) == "1") {
+            $money = $_POST['money'];
+            $nombre_format_francais = number_format($_POST['percent'], 2, '', ' ');
+            $percent = '0.0'.$nombre_format_francais;
+            $valuex = $money * $percent;
+            $test = $money - $valuex;
+            $response["status"] = 'success';
+            $response["message"] = 'เท่ากับ : '.$test.' บาท';
+        } else {
+            $money = $_POST['money'];
+            $nombre_format_francais = number_format($_POST['percent'], 2, '', ' ');
+            $percent = '0.'.$nombre_format_francais;
+            $valuex = $money * $percent;
+            $test = $money - $valuex;
+            $response["status"] = 'success';
+            $response["message"] = 'เท่ากับ : '.$test.' บาท';
+        }
     }
 }
 

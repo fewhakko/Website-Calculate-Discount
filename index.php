@@ -56,10 +56,9 @@
                     <div class="alert alert-dismissible alert-warning">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
                         <h4 class="alert-heading">คำอธิบาย</h4>
-                        <p class="mb-0"> </b>ตัวคำนวณหา%อัตโนมัติ วิธีการใช้เช่น
-                    30 เป็นเปอร์เซนต์เท่าไรของ 1000 กดคำนวณโปรแกรมจะช่วยหาคำตอบให้ซึ่งนั่นคือ 3% 
+                        <p class="mb-0"> </b>ตัวช่วยคำนวณค้นหาคำตอบของ%ของตัวเลขที่เราอยากรู้ เช่น 3% ของ 1000 กดคำนวณออกมา คำตอบจะได้ 970 
                     <br>
-                    ตัวอย่างการใช้เครื่องช่วยคำนวณ : อยากรู้ว่ากำไร 30 บาท จากการลงทุน 1,000 บาท เท่ากับกำไรกี่% กดคำนวณจะได้ 3%</p>
+                    ตัวอย่างการใช้เครื่องช่วยคำนวณ :ค่าธรรมเนียม 14.40% ของเงินต้น 1,000 บาท จะต้องเสียค่าธรรมเนียมกี่บาท กดคำนวณออกมา คำตอบจะได้ 856 </p>
                     </div>
 
                     <br>
@@ -84,7 +83,7 @@
 
                         <div class="col-lg-4 offset-lg-2">
                             <div class="form-group">
-                                <label class="control-label">เปอร์เซนต์</label>
+                                <label class="control-label">ส่วนลดเปอร์เซนต์</label>
                                 <div class="form-group">
                                 <div class="input-group mb-3">
                                     <input type="text" id="percent" class="form-control" placeholder="199.40">
